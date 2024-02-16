@@ -6,4 +6,6 @@ const maestroController = require('../controllers/maestro.controller');
 router.get('/', maestroController.maestrosGet);
 // Post 
 router.post('/', maestroController.crearMaestro);
+// Put 
+router.put('/:id', maestroController.actualizarPerfilMaestro);
 module.exports = router;

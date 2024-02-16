@@ -32,3 +32,20 @@ exports.crearMaestro = async ( req, res) =>{
 
     }
 };
+
+exports.actualizarPerfilMaestro = async (req, res) => {
+    try {
+      const { nombre, correo } = req.body;
+      const maestroId = req.params.id;
+      const maestro = await Maestro.findById(maestroId);
+      if (!maestro) {
+        return res.status(404).json({ message: 'Maestro no encontrado' });
+      }
+      maestro.nombre = nombre;
+      maestro.correo = correo;
+      await maestro.save();
+      res.status(200).json({ message: 'Perfil del maestro actualizado correctamente', maestro });
+    } catch (error) {
+      res.status(500).json({ message: 'Error al actualizar el perfil del maestro', error: error.message });
+    }
+  };
