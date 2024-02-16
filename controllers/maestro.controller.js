@@ -16,3 +16,19 @@ exports.maestrosGet = async (req, res = response)=>{
         maestros
     });
 }
+
+exports.crearMaestro = async ( req, res) =>{
+    try{
+        const { nombre, correo, password} = req.body;
+        const maestroExistente = await Maestro.findOne({ correo });
+        if(maestroExistente){
+            return res.status(400).json({message: 'El maestro ya existe'});
+        }
+        const nuevoMaestro = new Maestro({nombre, correo, password});
+        await nuevoMaestro.save(); 
+        res.status(201).json({message: 'El maestro se creó correctamente', maestro: nuevoMaestro });
+    }catch(error){
+        res.status(500).json({ message: 'Error al crear el maestro', error: error.message});
+
+    }
+};

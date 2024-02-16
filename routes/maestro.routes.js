@@ -4,5 +4,6 @@ const maestroController = require('../controllers/maestro.controller');
 
 //Get 
 router.get('/', maestroController.maestrosGet);
-
+// Post 
+router.post('/', maestroController.crearMaestro);
 module.exports = router;
