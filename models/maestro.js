@@ -1,4 +1,4 @@
-const mongoose = require('moongose');
+const mongoose = require('mongoose');
 
 const MaestroSchema = new mongoose.Schema({
     nombre: {
@@ -19,5 +19,5 @@ const MaestroSchema = new mongoose.Schema({
     }
 });
 
-const Maestro = moongose.model('Maestro', MaestroSchema);
+const Maestro = mongoose.model('Maestro', MaestroSchema);
 module.exports = Maestro;
