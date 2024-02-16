@@ -8,11 +8,10 @@
     constructor(){
         this.app = express();
         this.port = process.env.PORT;
-        this.loginPath = '/api/login'
-
+        this.estudiantePath = '/api/estudiante'
         this.conectarDB();
         this.middlewares();
-       /* this.routes(); */
+       this.routes();  
     }
 
     async conectarDB(){
@@ -23,9 +22,9 @@
         this.app.use(cors());
         this.app.use(express.json());
     }
-    /*routes(){
-        
-    }*/
+    routes(){
+        this.app.use(this.estudiantePath, require('../routes/estudiante.routes'));
+    }
 
     listen(){
         this.app.listen(this.port, () =>{

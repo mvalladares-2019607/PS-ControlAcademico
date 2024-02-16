@@ -1,6 +1,6 @@
-const { Schema, model} = require('mongoose');
+const mongoose = require('mongoose');
 
-const EstudianteEschema = Schema ({
+const EstudianteEschema = new mongoose.Schema ({
     nombre: {
         type: String, 
         required: [true, 'Se necesita un nombre']
@@ -13,9 +13,15 @@ const EstudianteEschema = Schema ({
         type: String, 
         required: [true, 'Se necesita contraseña']
     }, 
-    role: { type: String, enum: ['TEACHER_ROLE', 'STUDENT_ROLE'], default: 'STUDENT_ROLE' },
-    cursos: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Curso' }]
+    estado: {
+        type: Boolean, 
+        default:true
+    }
+  /*  role: { type: String, enum: ['TEACHER_ROLE', 'STUDENT_ROLE'], default: 'STUDENT_ROLE' },
+
+    cursos: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Curso' }]*/
 
 });
 
-module.exports = model('Estudiante', EstudianteEschema);
+const Estudiante = mongoose.model('Estudiante', EstudianteEschema);
+module.exports = Estudiante;
