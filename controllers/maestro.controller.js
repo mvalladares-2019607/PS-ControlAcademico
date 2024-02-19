@@ -32,6 +32,14 @@ exports.crearMaestro = async ( req, res) =>{
 
     }
 };
+exports.eliminarPerfilMaestro = async (req, res) =>{
+  const { id } = req.params;
+  await Maestro.findByIdAndUpdate(id, {estado:false});
+
+  const maestro = await Maestro.findOne({_id: id});
+  res.status(201).json({message: 'Usuario eliminado exitosamente'}), 
+  maestro
+};
 
 exports.actualizarPerfilMaestro = async (req, res) => {
     try {

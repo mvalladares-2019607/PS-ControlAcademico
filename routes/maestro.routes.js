@@ -8,4 +8,6 @@ router.get('/', maestroController.maestrosGet);
 router.post('/', maestroController.crearMaestro);
 // Put 
 router.put('/:id', maestroController.actualizarPerfilMaestro);
+// Delete
+router.delete('/:id', maestroController.eliminarPerfilMaestro);
 module.exports = router;
