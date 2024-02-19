@@ -10,6 +10,7 @@
         this.port = process.env.PORT;
         this.estudiantePath = '/api/estudiante'
         this.maestroPath = '/api/maestro'
+        this.cursoPath = '/api/curso'
         this.conectarDB();
         this.middlewares();
        this.routes();  
@@ -26,6 +27,7 @@
     routes(){
         this.app.use(this.estudiantePath, require('../routes/estudiante.routes'));
         this.app.use(this.maestroPath, require('../routes/maestro.routes'));
+        this.app.use(this.cursoPath, require ('../routes/curso.routes'));
     }
 
     listen(){
