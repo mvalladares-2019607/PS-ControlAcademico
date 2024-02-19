@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Maestros",
+    "dateExported": "2024-02-19T03:45:27.127Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "beea9a55-49bd-4b93-a76d-a6d045a361b5",
+            "colId": "4ee89fd6-e2c4-444e-a6f7-66f651710eb7",
+            "containerId": "",
+            "name": "maestrosGet",
+            "url": "http://localhost:3000/api/maestro",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-16T16:39:29.275Z",
+            "modified": "2024-02-16T16:41:18.385Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c3030f9a-cc9f-4cb6-81a6-909b9ea716a4",
+            "colId": "4ee89fd6-e2c4-444e-a6f7-66f651710eb7",
+            "containerId": "",
+            "name": "maestroPost",
+            "url": "http://localhost:3000/api/maestro",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-16T17:08:04.192Z",
+            "modified": "2024-02-16T17:09:25.554Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Pedro\",\n  \"correo\": \"pedro@gmail.com\",\n  \"password\": \"contraseña123\",\n  \"estado\": true\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "334f4cd8-a9b6-4170-8fc4-2685374e7d9d",
+            "colId": "4ee89fd6-e2c4-444e-a6f7-66f651710eb7",
+            "containerId": "",
+            "name": "maestroPut",
+            "url": "http://localhost:3000/api/maestro/65cf918bc18c80bd61317275",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-16T17:19:57.859Z",
+            "modified": "2024-02-16T17:33:38.374Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"JOSE\",\n  \"correo\": \"hola@correo.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c7774e3b-a3a8-42cd-986a-fe662d3ae638",
+            "colId": "4ee89fd6-e2c4-444e-a6f7-66f651710eb7",
+            "containerId": "",
+            "name": "maestroDelete",
+            "url": "http://localhost:3000/api/maestro/65cf918bc18c80bd61317275",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-19T00:18:19.907Z",
+            "modified": "2024-02-19T00:18:32.720Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Estudiantes",
+    "dateExported": "2024-02-19T03:45:16.523Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a91dc271-af99-4920-bd3e-ee3d25b53158",
+            "colId": "69b6e4e2-23af-4a86-bf0f-2458a09c18dd",
+            "containerId": "",
+            "name": "estudiantesGet",
+            "url": "http://localhost:3000/api/estudiante",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-15T22:51:39.348Z",
+            "modified": "2024-02-16T14:48:56.030Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ccc9d587-2ccd-43e9-b60c-d3be2a7e9e5c",
+            "colId": "69b6e4e2-23af-4a86-bf0f-2458a09c18dd",
+            "containerId": "",
+            "name": "estudiantePost",
+            "url": "http://localhost:3000/api/estudiante",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-16T03:37:40.751Z",
+            "modified": "2024-02-16T05:58:51.844Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Mateo Valladares\",\n  \"correo\": \"mateo@gmail.com\",\n  \"password\": \"contraseña123\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "36839921-0e8d-416b-a4ef-2dc8e630f7c2",
+            "colId": "69b6e4e2-23af-4a86-bf0f-2458a09c18dd",
+            "containerId": "",
+            "name": "estudianteDelete",
+            "url": "http://localhost:3000/api/estudiante/65ceee54d00da5aa28947ba0",
+            "method": "DELETE",
+            "sortNum": 45000,
+            "created": "2024-02-19T00:22:44.915Z",
+            "modified": "2024-02-19T00:22:44.915Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a2ebf41c-416d-4b90-94f5-d41e97c64e58",
+            "colId": "69b6e4e2-23af-4a86-bf0f-2458a09c18dd",
+            "containerId": "",
+            "name": "estudiantePut",
+            "url": "http://localhost:3000/api/estudiante/65cef3cdd00da5aa28947ba3",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-16T05:45:28.027Z",
+            "modified": "2024-02-16T13:20:50.050Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"nombre\": \"JOSE\",\r\n  \"correo\": \"hola@correo.com\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
