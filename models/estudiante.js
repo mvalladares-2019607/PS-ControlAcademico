@@ -16,10 +16,16 @@ const EstudianteEschema = new mongoose.Schema ({
     estado: {
         type: Boolean, 
         default:true
+    },
+    cursos: {
+        type: Array, 
+        default: ["","",""]
+    },
+    role: {
+        type: String, 
+        default: "STUDENT_ROLE"
     }
-  /*  role: { type: String, enum: ['TEACHER_ROLE', 'STUDENT_ROLE'], default: 'STUDENT_ROLE' },
-
-    cursos: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Curso' }]*/
+    
 
 });
 

@@ -71,4 +71,4 @@ exports.actualizarPerfilMaestro = async (req, res) => {
     } catch (error) {
       res.status(500).json({ message: 'Error al actualizar el perfil del maestro', error: error.message });
     }
-  };
+  }; 
