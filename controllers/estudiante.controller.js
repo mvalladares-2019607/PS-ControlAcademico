@@ -21,10 +21,10 @@ exports.asignarCurso = async (req, res) => {
         const estudianteId = req.estudianteId;
         const estudiante = await Estudiante.findById(estudianteId);
         if(!estudiante){
-            return res.status(404).json({mensaje: 'estudiante no encontrado'});
+            return res.status(404).json({mensaje: 'No se ha encontrdo al estudiante'});
         }
         if(estudiante.cursos.length >= 3){
-            return res.status(400).json({mensaje: 'El estudiante ya está inscrito en tres cursos'});
+            return res.status(400).json({mensaje: 'Solamente puede asignarse a 3 cursos.'});
         }
         if(estudiante.cursos.includes(cursoId)){
             return res.status(400).json({mensaje: 'El estudiante ya está en este curso'});
