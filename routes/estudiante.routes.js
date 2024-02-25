@@ -1,9 +1,10 @@
-
-
 const express = require('express');
 const router = express.Router();
-const estudianteController = require('../controllers/estudiante.controller');
-const authToken = require ('../middlewares/authToken');
-
+const estudianteController = require ('../controllers/estudiante.controller');
+const { verificarToken } = require ('../middlewares/authMiddleware');
+router.post('/registro', estudianteController.registrarEstudiante);
+router.post('/asignar-curso', verificarToken, estudianteController.asignarCurso); 
+router.get('/cursos-asignados', verificarToken, estudianteController.obtenerCursosAsignados);
+router.put('/perfil-edit', verificarToken, estudianteController.editarPerfilEstudiante);
+router.delete('/perfil-delete', verificarToken, estudianteController.eliminarPerfilEstudiante);
 module.exports = router;
-
