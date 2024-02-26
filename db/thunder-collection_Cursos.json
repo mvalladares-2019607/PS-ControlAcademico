@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Cursos",
-    "dateExported": "2024-02-19T03:45:31.003Z",
+    "dateExported": "2024-02-26T03:20:19.860Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -28,14 +28,9 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-02-19T02:17:11.903Z",
-            "modified": "2024-02-19T02:30:16.734Z",
+            "modified": "2024-02-25T14:58:39.982Z",
             "headers": [],
             "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"nombre\": \"Lengua\",\n  \"estado\": true\n}",
-                "form": []
-            },
             "tests": []
         },
         {
@@ -43,16 +38,16 @@
             "colId": "832d18cb-e17b-41af-ba38-f18f7bb2f984",
             "containerId": "",
             "name": "cursoPut",
-            "url": "http://localhost:3000/api/curso/65d2b30be9994b102dca6b41",
+            "url": "http://localhost:3000/api/curso/65dab28636e470dbe2e8aa8d",
             "method": "PUT",
             "sortNum": 30000,
             "created": "2024-02-19T02:33:29.484Z",
-            "modified": "2024-02-19T02:34:55.564Z",
+            "modified": "2024-02-25T14:59:19.039Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\": \"inglés\"\n}",
+                "raw": "{\n  \"nombre\": \"ética\", \n  \"estado\": true\n}",
                 "form": []
             },
             "tests": []
@@ -62,11 +57,11 @@
             "colId": "832d18cb-e17b-41af-ba38-f18f7bb2f984",
             "containerId": "",
             "name": "cursoDelete",
-            "url": "http://localhost:3000/api/curso/65d2b30be9994b102dca6b41",
+            "url": "http://localhost:3000/api/curso/65d2bd3a65afe0bfca194d56",
             "method": "DELETE",
             "sortNum": 40000,
             "created": "2024-02-19T02:38:10.347Z",
-            "modified": "2024-02-19T02:38:15.549Z",
+            "modified": "2024-02-23T15:15:50.159Z",
             "headers": [],
             "params": [],
             "tests": []

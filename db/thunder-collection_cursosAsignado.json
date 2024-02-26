@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "cursosAsignado",
+    "dateExported": "2024-02-26T03:20:55.164Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "844fb0e3-4db7-42a0-99b2-882be173110c",
+            "colId": "d0073df2-93ce-46dd-841f-53548299e1f0",
+            "containerId": "",
+            "name": "cursosAsignadoGet",
+            "url": "http://localhost:3000/api/estudiante/cursos-asignados",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-25T04:00:30.893Z",
+            "modified": "2024-02-26T03:15:06.852Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGMwMWFhZTM2MGM2OTJiY2MxZTM5MSIsImlhdCI6MTcwODkxNzE3NX0.IwXBIjIzsaJloSBG0xqJyY90ViMc-HK2BVzk0jECNuA"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

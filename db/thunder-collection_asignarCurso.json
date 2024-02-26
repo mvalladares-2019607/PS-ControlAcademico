@@ -1,0 +1,33 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "asignarCurso",
+    "dateExported": "2024-02-26T03:20:48.513Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "bf57892c-b0a4-467b-83b7-15d8ace23494",
+            "colId": "8586a291-38ed-4fd2-abc3-a1a0779a0a34",
+            "containerId": "",
+            "name": "asignarCursoPost",
+            "url": "http://localhost:3000/api/estudiante/asignar-curso",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-25T02:27:40.397Z",
+            "modified": "2024-02-26T03:14:39.440Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGMwMWFhZTM2MGM2OTJiY2MxZTM5MSIsImlhdCI6MTcwODkxNzE3NX0.IwXBIjIzsaJloSBG0xqJyY90ViMc-HK2BVzk0jECNuA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cursoId\": \"65dab28636e470dbe2e8aa8d\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

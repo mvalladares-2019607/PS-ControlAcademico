@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Registro",
+    "dateExported": "2024-02-26T03:20:31.636Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1781818b-6087-4f21-98ad-dabc86dd38e5",
+            "colId": "f7171bba-e969-4f21-bc54-e04e0871036d",
+            "containerId": "",
+            "name": "authPost",
+            "url": "http://localhost:3000/api/auth/registro",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-25T01:21:13.782Z",
+            "modified": "2024-02-26T03:12:41.730Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"mario\",\n  \"correo\": \"mario@kinal.com\",\n  \"password\": \"contraseña123\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
